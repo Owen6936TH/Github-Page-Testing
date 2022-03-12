@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
+		<script>
+		var arr = 69;
+		
+		const meJson = `{ 
+        "name" : "mongorn",
+		"age" : 25,
+		"testvar" : `+arr+`,
+		"lnw" : "lnwza007"
+        }`;
+		
+		const me = JSON.parse(meJson);
+		const my = JSON.stringify(me);
+		document.write(my);
+		console.log(my);
+		</script>
+    </body>
+</html>
