@@ -3,22 +3,16 @@
 		<title>Page Title Goes Here</title>
 	</head>
 	<body>
+		<h2 id="title">JSON from XHR - Jacascript - decode </h2>
 		<script>
-		var arr = 69;
+		const xhr = new XMLHttpRequest();
 		
-		const meJson = `{ 
-        "name" : "mongorn",
-		"age" : 25,
-		"testvar" : `+arr+`,
-		"lnw" : "lnwza007",
-		"version" : "2.0"
-        }`;
-		
-		const me = JSON.parse(meJson);
-		const my = JSON.stringify(me);
-
-		console.log(my);
+		xhr.onload = function () {
+			console.log(this);
+			}
+			
+			xhr.open('get', 'data.json');
+			xhr.send();
 		</script>
-		<p><script type="text/javascript">document.write(my);</script></p> 
     </body>
 </html>
